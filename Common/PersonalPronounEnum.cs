@@ -1,9 +1,13 @@
 namespace translator.Common
 {
     public enum PersonalPronounEnum {
+        Unidentified,
+
+        FirstPersonSingular,
         FirstPersonSingularMasculine, // je, me, ich
         FirstPersonSingularFeminine, // je, me, ich
 
+        SecondPersonSingular,
         SecondPersonSingularMasculine, // tu, you, du
         SecondPersonSingularFeminine, // tu, you, du
 
@@ -19,5 +23,7 @@ namespace translator.Common
 
         ThirdPersonPluralMasculine, // ils, they, sie
         ThirdPersonPluralFeminine, // elles, they, sie        
+        FirstPersonPlural,
+        SecondPersonPlural,
     }
 }

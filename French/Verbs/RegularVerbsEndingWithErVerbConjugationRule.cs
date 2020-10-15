@@ -8,11 +8,15 @@ namespace translator.French.Verbs
             var stem = verb.Remove(verb.Length -2);
 
             switch (personalPronoun) {
+                case PersonalPronounEnum.FirstPersonSingular:
+                    return stem + "e";
                 case PersonalPronounEnum.FirstPersonSingularMasculine :
                     return stem + "e";
                 case PersonalPronounEnum.FirstPersonSingularFeminine : 
                     return stem + "e";
 
+                case PersonalPronounEnum.SecondPersonSingular:
+                    return stem + "es";
                 case PersonalPronounEnum.SecondPersonSingularMasculine : 
                     return stem + "es";
                 case PersonalPronounEnum.SecondPersonSingularFeminine :
@@ -41,7 +45,12 @@ namespace translator.French.Verbs
                     return stem + "ent";
             }
 
-            throw new System.Exception("Unknown conjugation form");
+            throw new System.Exception("Unknown conjugation: " + personalPronoun + " , " + verb);
+        }
+
+        public bool IsMatchingRule(string verb)
+        {
+            return (verb.EndsWith("er"));
         }
     }
 }
