@@ -1,4 +1,4 @@
-namespace translator.Common
+namespace translator.common.Common
 {
     public interface IPersonalPronounInterpreter
     {

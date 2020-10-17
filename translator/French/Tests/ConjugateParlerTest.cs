@@ -1,4 +1,4 @@
-using translator.Common;
+using translator.common.Common;
 using translator.French.Verbs;
 using Xunit;
 

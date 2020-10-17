@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace translator.Common
+namespace translator.common.Common
 {
-    internal class VerbConjugator : IVerbConjugator
+    public class VerbConjugator : IVerbConjugator
     {
         private readonly List<IVerbConjugationRule> rules;
 

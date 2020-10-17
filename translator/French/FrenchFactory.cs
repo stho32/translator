@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using translator.Common;
+using translator.common.Common;
 
 namespace translator.French
 {

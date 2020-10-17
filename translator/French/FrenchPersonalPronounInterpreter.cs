@@ -1,5 +1,5 @@
 using System;
-using translator.Common;
+using translator.common.Common;
 
 namespace translator.French
 {
