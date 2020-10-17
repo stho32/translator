@@ -1,4 +1,5 @@
 bin/Debug/
 obj/Debug/
 obj/
-
+/translator.common/bin/Debug
+/translator/bin/Debug
