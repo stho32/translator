@@ -43,6 +43,12 @@ namespace translator.French.Verbs
                     return stem + "ent";
                 case PersonalPronounEnum.ThirdPersonPluralFeminine :
                     return stem + "ent";
+
+                case PersonalPronounEnum.FirstPersonPlural :
+                    return stem + "ons";
+                
+                case PersonalPronounEnum.SecondPersonPlural :
+                    return stem + "ez";
             }
 
             throw new System.Exception("Unknown conjugation: " + personalPronoun + " , " + verb);

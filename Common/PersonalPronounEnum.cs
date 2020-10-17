@@ -3,7 +3,7 @@ namespace translator.Common
     public enum PersonalPronounEnum {
         Unidentified,
 
-        FirstPersonSingular,
+        FirstPersonSingular, 
         FirstPersonSingularMasculine, // je, me, ich
         FirstPersonSingularFeminine, // je, me, ich
 
