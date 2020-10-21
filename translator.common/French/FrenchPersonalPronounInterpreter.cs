@@ -1,7 +1,7 @@
 using System;
 using translator.common.Common;
 
-namespace translator.French
+namespace translator.common.French
 {
     internal class FrenchPersonalPronounInterpreter : IPersonalPronounInterpreter
     {

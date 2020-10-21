@@ -3,3 +3,5 @@ obj/Debug/
 obj/
 /translator.common/bin/Debug
 /translator/bin/Debug
+translator.tests/bin/Debug/
+translator.tests/obj/Debug/

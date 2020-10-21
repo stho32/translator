@@ -1,6 +1,6 @@
 ﻿using translator.common.Common;
 
-namespace translator.French.Verbs
+namespace translator.common.French.Verbs
 {
     public class RegularVerbsEndingWithErVerbConjugationRule : IVerbConjugationRule
     {

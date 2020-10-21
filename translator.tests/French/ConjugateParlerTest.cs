@@ -1,8 +1,8 @@
 using translator.common.Common;
-using translator.French.Verbs;
+using translator.common.French.Verbs;
 using Xunit;
 
-namespace translator.French.Tests
+namespace translator.tests.French
 {
     public class ConjugateParlerTest
     {

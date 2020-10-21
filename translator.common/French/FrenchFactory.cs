@@ -1,17 +1,18 @@
 using System;
 using System.Collections.Generic;
 using translator.common.Common;
+using translator.common.French.Verbs;
 
-namespace translator.French
+namespace translator.common.French
 {
     public class FrenchFactory
     {
-        internal IPersonalPronounInterpreter GetPersonalPronounInterpreter()
+        public IPersonalPronounInterpreter GetPersonalPronounInterpreter()
         {
             return new FrenchPersonalPronounInterpreter();
         }
 
-        internal IVerbConjugator GetVerbConjugator()
+        public IVerbConjugator GetVerbConjugator()
         {
             var rules = new List<IVerbConjugationRule>();
             rules.Add(new French.Verbs.RegularVerbsEndingWithErVerbConjugationRule());

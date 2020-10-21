@@ -1,6 +1,7 @@
 ﻿using System;
 using translator.common.Common;
-using translator.French;
+using translator.common.French.Verbs;
+using translator.common.French;
 
 namespace translator
 {
