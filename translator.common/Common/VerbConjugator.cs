@@ -11,10 +11,10 @@ namespace translator.common.Common
             this.rules = rules;
         }
 
-        public string GetConjugatedForm(PersonalPronounEnum pronoun, string verb)
+        public string GetConjugatedForm(PersonalPronounEnum pronoun, string verb, TenseEnum tense)
         {
             foreach (var rule in rules) {
-                if ( rule.IsMatchingRule(verb) ) {
+                if ( rule.IsMatchingRule(verb, tense) ) {
                     return rule.Conjugate(verb, pronoun);
                 }
             }

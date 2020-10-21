@@ -2,7 +2,7 @@
 
 namespace translator.common.French.Verbs
 {
-    public class RegularVerbsEndingWithErVerbConjugationRule : IVerbConjugationRule
+    public class RegularVerbsEndingWithErPresentTenseVerbConjugationRule : IVerbConjugationRule
     {
         public string Conjugate(string verb, PersonalPronounEnum personalPronoun) {
             var stem = verb.Remove(verb.Length -2);
@@ -54,9 +54,12 @@ namespace translator.common.French.Verbs
             throw new System.Exception("Unknown conjugation: " + personalPronoun + " , " + verb);
         }
 
-        public bool IsMatchingRule(string verb)
+        public bool IsMatchingRule(string verb, TenseEnum tense)
         {
-            return (verb.EndsWith("er"));
+            if (tense == TenseEnum.Present && verb.EndsWith("er"))
+                return true;
+
+            return false;
         }
     }
 }

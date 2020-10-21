@@ -15,7 +15,7 @@ namespace translator.common.French
         public IVerbConjugator GetVerbConjugator()
         {
             var rules = new List<IVerbConjugationRule>();
-            rules.Add(new French.Verbs.RegularVerbsEndingWithErVerbConjugationRule());
+            rules.Add(new French.Verbs.RegularVerbsEndingWithErPresentTenseVerbConjugationRule());
 
             return new VerbConjugator(rules);
         }

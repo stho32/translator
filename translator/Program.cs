@@ -39,7 +39,7 @@ namespace translator
                 try
                 {
                     Console.WriteLine("");
-                    Console.WriteLine(pronounInput + " " + verbConjugator.GetConjugatedForm(pronoun, verb));
+                    Console.WriteLine(pronounInput + " " + verbConjugator.GetConjugatedForm(pronoun, verb, TenseEnum.Present));
                     Console.WriteLine("");
                 }
                 catch (System.Exception ex)

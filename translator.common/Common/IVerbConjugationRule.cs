@@ -2,7 +2,7 @@
 {
     public interface IVerbConjugationRule
     {
-        bool IsMatchingRule(string verb);
+        bool IsMatchingRule(string verb, TenseEnum tense);
         string Conjugate(string verb, PersonalPronounEnum personalPronoun);
     }
 }

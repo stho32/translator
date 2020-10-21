@@ -8,7 +8,7 @@ namespace translator.tests.French
     {
         private string conjugateVerb(PersonalPronounEnum personalPronoun)
         {
-            var rule = new RegularVerbsEndingWithErVerbConjugationRule();
+            var rule = new RegularVerbsEndingWithErPresentTenseVerbConjugationRule();
             return rule.Conjugate("parler", personalPronoun);
         }
 
